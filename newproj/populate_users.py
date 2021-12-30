@@ -9,7 +9,7 @@ from faker import Faker
 fakegen = Faker()
 def populate(N=5):
 
-    for entry in range(N):
+    for _ in range(N):
         fake_name = fakegen.name().split()
         fake_first_name = fake_name[0]
         fake_last_name = fake_name[1]
